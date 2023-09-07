@@ -2,9 +2,12 @@ package main
 
 import (
 	"fmt"
-	"math"
+
+	"github.com/myuser/calculator"
 )
 
 func main() {
-	fmt.Println(math.MaxFloat32, math.MaxFloat64)
+	total := calculator.Sum(3, 5)
+	fmt.Println(total)
+	fmt.Println("Version: ", calculator.Version)
 }
