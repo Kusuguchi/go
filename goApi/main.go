@@ -95,8 +95,8 @@ func main() {
 	r := mux.NewRouter()
 
 	//モックデータの作成
-	books = append(books, Book{ID: "1", Title: "Book one", Author: &Author{FirstName: "Philip", LastName: "Williams"}})
-	books = append(books, Book{ID: "2", Title: "Book Two", Author: &Author{FirstName: "John", LastName: "Johnson"}})
+	books = append(books, Book{ID: "1", Title: "Book one", Author: &Author{FirstName: "Kyosuke", LastName: "Kusuguchi"}})
+	books = append(books, Book{ID: "2", Title: "Book Two", Author: &Author{FirstName: "Hiroyuki", LastName: "Takayama"}})
 
 	// ルート(エンドポイント)
 	r.HandleFunc("/api/books", getBooks).Methods("GET")
